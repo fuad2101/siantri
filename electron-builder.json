@@ -1,0 +1,14 @@
+{
+    "appId":"myapp.id",
+    "productName":"MyApp",
+    "files":"src/electron/main.js",
+    "mac":{
+        "target":"dmg"
+    },
+    "win":{
+        "target":"portable"
+    },
+    "linux":{
+        "target":["AppImage"]
+    }
+}
