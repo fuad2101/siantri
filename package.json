@@ -6,7 +6,8 @@
   "scripts": {
     "dev:electron": "electron .",
     "dev:vite": "vite",
-    "dist:win": "npm run build && electron-builder --win --x64",
+    "dist:win": "npm run transpile:electron && npm run build && electron-builder --win --x64",
+    "transpile:electron": "tsc -p src/electron/tsconfig.json",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
